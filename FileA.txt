@@ -1,2 +1,56 @@
 this is file A
 change file
+
+PS V:\Reactjs\Working> dir
+
+
+    Directory: V:\Reactjs\Working
+
+
+Mode                 LastWriteTime      Length
+----                 -------------      ------
+-a----        17-04-2025     03:10          14
+-a----        17-04-2025     03:10          14
+
+
+PS V:\Reactjs\Working> git init
+Initialized empty Git repository in V:/Reactjs/Working/.git/
+PS V:\Reactjs\Working> git config --global user.name "vinod susar"
+PS V:\Reactjs\Working> git config --global user.email "vinodsusar@gmail.com"
+PS V:\Reactjs\Working> git add .
+PS V:\Reactjs\Working> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage) 
+        new file:   FileA.txt
+        new file:   FileB.txt
+
+PS V:\Reactjs\Working> git commit -m "this is the initial commit"
+[master (root-commit) 5fe1c79] this is the initial commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 FileA.txt
+ create mode 100644 FileB.txt
+PS V:\Reactjs\Working> git status
+On branch master
+nothing to commit, working tree clean
+PS V:\Reactjs\Working> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   FileA.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS V:\Reactjs\Working> git add FileA
+fatal: pathspec 'FileA' did not match any files
+PS V:\Reactjs\Working> git add FileA.txt
+PS V:\Reactjs\Working> git commit -m "change made to fileA"
+[master f8c61ca] change made to fileA
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS V:\Reactjs\Working> git status
+On branch master
+nothing to commit, working tree clean
+PS V:\Reactjs\Working>
